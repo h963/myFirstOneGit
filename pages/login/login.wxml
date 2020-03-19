@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+
+<view class="accountLogin_bgc">
+  <text>账户登录</text>
+  <view class="accountLogin_num">
+    <image src="/assets/login/login_icon_1.svg" />
+    <text>手机号</text>
+    <input type="text" bindinput="ph_num" placeholder-class="place-holder" placeholder="请输入手机号"></input>
+  </view>
+  <view class="accountLogin_num">
+    <image src="/assets/login/login_icon_2.svg" />
+    <text>密码</text>
+    <input type="password" bindinput="pwd_num" placeholder-class="place-holder" placeholder="请输入登录秘密"></input>
+  </view>
+  <button catchtap='log_in' open-type="getUserInfo" bindgetuserinfo="info">登录</button>
+</view>

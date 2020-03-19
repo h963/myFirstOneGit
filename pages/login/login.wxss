@@ -1,0 +1,60 @@
+/* pages/login/login.wxss */
+page {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8040), to(#ff4926));
+  background: linear-gradient(90deg, #ff8040, #ff4926);
+  background: -webkit-linear-gradient(left, #ff8040, #ff4926);
+}
+.accountLogin_bgc {
+  padding: 40rpx 15rpx 30rpx 15rpx;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 650rpx;
+  margin: 235rpx 0 0 35rpx;
+  border-radius: 25rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+.accountLogin_bgc>text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 38rpx;
+}
+.accountLogin_num {
+  position: relative;
+}
+.accountLogin_num>image{
+  width: 45rpx;
+  height: 45rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+}
+.accountLogin_num>text {
+  position: absolute;
+  top: 20rpx;
+  left: 60rpx;
+}
+.accountLogin_num input{
+  border: 1rpx solid #fff;
+  height: 80rpx;
+  padding-left: 180rpx;
+  margin: 30rpx 0 0 0;
+  border-radius: 40rpx;
+  color: #fff;
+}
+.accountLogin_bgc>button {
+  color: #fff;
+  margin: 40rpx 0 0 0;
+  display: block;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-weight: 400;
+  text-align: center;
+  font-size: 38rpx;
+  background-color: #e94917;
+  border-radius: 40rpx;
+}
+.accountLogin_num .place-holder{
+  color: #fff;
+}

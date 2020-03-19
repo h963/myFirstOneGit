@@ -1,0 +1,67 @@
+<view class="headFun">
+  <navigator catchtap="scanCode" url="javascript:;">
+    <image src="/assets/index/scan_icon.png" />
+  </navigator>
+  <view class="headFun_seach">
+    <image src="/assets/index/seach_icon.png" />
+    <input type="text" placeholder="请输入订单号/手机号/收货人姓名/日期" bindinput="seachVal" value="{{val}}" />
+    <button catchtap='search'>搜索</button>
+  </view>
+</view>
+
+<view class="orderLay">
+  <view catchtap="click" wx:for="{{orderLay}}" wx:key="status">
+    <text class="{{index == id?'orderLay_act':''}}" data-status="{{item.status}}" data-ids="{{index}}">{{item.orderX}}</text>
+  </view>
+</view>
+
+<view class="orderList">
+
+  <view wx:for="{{msg}}" wx:key="status" class="order_list">
+    <view class="order_listBox">
+      <view class="listBoxBtn">
+        <navigator class="btnFH" url="/pages/shipments/shipments">发货</navigator>
+        <navigator class="btnCK" url="/pages/tdog/tdog">查看</navigator>
+      </view>
+      <view class="listBoxText">
+        <view>
+          <text class="Color_6a">下单人：</text>
+          <text>{{item.order_placer}}</text>
+        </view>
+        <view>
+          <text class="Color_6a">收货人：</text>
+          <text>{{item.consignee}}</text>
+        </view>
+        <view>
+          <text class="Color_6a">完成时间：</text>
+          <text>{{item.wc_time}}</text>
+        </view>
+        <view>
+          <text class="Color_6a">订单号：</text>
+          <text>{{item.order_num}}</text>
+        </view>
+        <view>
+          <text class="Color_6a">发货产品：</text>
+          <text>{{item.product_delivery}}</text>
+        </view>
+        <view>
+          <text class="Color_6a">收货地址：</text>
+          <text>{{item.rece_address}}</text>
+        </view>
+        <view class="abRight">
+          <text class="Color_6a">手机号码：</text>
+          <text>{{item.consignee_phone}}</text>
+        </view>
+        <view class="abRight1">
+          <text class="Color_6a">状态：</text>
+          <text wx:if="{{item.status == 0}}">未付款</text>
+          <text wx:elif="{{item.status == 40}}">等待发货</text>
+          <text wx:elif="{{item.status == 50}}">等待收货</text>
+          <text wx:else="{{item.status == 90}}">完成</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

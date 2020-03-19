@@ -1,0 +1,135 @@
+.headFun {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.headFun navigator {
+  float: left;
+  margin: 21rpx 0 0 16rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+.headFun navigator image{
+  width: 100%;
+  height: 100%;
+}
+.headFun .headFun_seach {
+  width: 85%;
+  margin: 18rpx 0 0 29rpx;
+  float: left;
+  position: relative;
+}
+.headFun .headFun_seach input{
+  width: 70%;
+  height: 62rpx;
+  padding: 0 64rpx 0 48rpx;
+  border-radius: 32rpx;
+  border: 1rpx solid red;
+  font-size: 22rpx;
+}
+.headFun .headFun_seach image {
+  width: 30rpx;
+  height: 29rpx;
+  position: absolute;
+  top: 18rpx;
+  left: 18rpx;
+}
+.headFun .headFun_seach button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 131rpx;
+  height: 65rpx;
+  line-height: 64rpx;
+  background-color: red;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 28rpx;
+  border-radius: 32rpx;
+}
+
+.orderLay {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  border: 2rpx solid #f1f1f1;
+}
+.orderLay view {
+  flex: 1;
+}
+.orderLay .orderLay_act {
+  color: red;
+  border-bottom: 4rpx solid red;
+  box-sizing: border-box;
+}
+.orderLay view text {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100rpx;
+  display: block;
+  width: 80%;
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.order_list {
+  width: 100%;
+  height: 370rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.order_list .order_listBox {
+  width: 680rpx;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.order_list .order_listBox .listBoxText {
+  width: 640rpx;
+  padding: 20rpx 0 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+.listBoxText text {
+  font-size: 26rpx;
+}
+.listBoxText view {
+  margin-top: 10rpx;
+}
+.listBoxText .abRight {
+  position: absolute;
+  top: 65rpx;
+  left: 320rpx;
+}
+.listBoxText .abRight1 {
+  position: absolute;
+  top: 115rpx;
+  left: 320rpx;
+}
+.listBoxText .Color_6a {
+  display: inline-block;
+  width: 150rpx;
+  color: #6a6a6a;
+}
+.order_listBox .listBoxBtn{
+  position: absolute;
+  z-index: 1;
+  right: 20rpx;
+}
+.order_listBox .listBoxBtn navigator{
+  text-align: center;
+  width: 90rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  font-size: 26rpx;
+  color: #fff;
+}
+.order_listBox .listBoxBtn .btnFH {
+  background-color: #ff8040;
+}
+.order_listBox .listBoxBtn .btnCK {
+  background-color: #ff4926;
+}

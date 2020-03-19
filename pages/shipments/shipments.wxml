@@ -1,0 +1,84 @@
+<!--pages/shipments/shipments.wxml-->
+<view wx:for="{{product}}" class="headBox clearFix">
+  <view class="headBoxImg">
+    <image src="{{item.img}}" />
+  </view>
+  <view class="headBoxText">
+    <view>
+      <text>发货产品：</text>
+      <text class="Color6a">{{item.prd_name}}</text>
+    </view>
+    <view>
+      <text>购买数量：</text>
+      <text class="Color6a">{{item.prd_num}}</text>
+    </view>
+    <view>
+      <text>时间：</text>
+      <text class="Color6a">{{item.wc_time}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="messageFH">
+  <view class="messageFHTit">
+    <strong>发货信息</strong>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">收货人：</text>
+    <text>李富贵</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">发货地址：</text>
+    <text>湖南省长沙市开福区运达国际广场</text>
+  </view>
+  <view class="messageFHTit productFh clearFix">
+    <text>发货产品：</text>
+    <view class="productList">
+      <checkbox-group class="clearFix" bindchange="chbChange">
+        <view class="clearFix">
+          <label class="left">
+            拿铁咖啡-1包
+            <checkbox value="拿铁咖啡-1包" name="pdct"></checkbox>
+          </label>
+          <label class="left margL34">
+            椰子油-1瓶
+            <checkbox value="椰子油-1瓶" name="pdct"></checkbox>
+          </label>
+          <label class="left">
+            拿铁咖啡-1包
+            <checkbox value="拿铁咖啡-1包" name="pdct"></checkbox>
+          </label>
+          <label class="left margL34">
+            椰子油-1瓶
+            <checkbox value="椰子油-1瓶" name="pdct"></checkbox>
+          </label>
+        </view>
+        
+      </checkbox-group>
+    </view>
+  </view>
+  <view class="messageFHTit express clearFix">
+    <text class="width180">快递名称：</text>
+    <input value="{{val}}" placeholder="请输入快递名称"></input>
+    <navigator catchtap="scanCode" url="javascript:;">
+      <image src="/assets/index/scan_icon.png" />
+    </navigator>
+  </view>
+   <view class="messageFHTit express clearFix">
+    <text class="width180">快递编号：</text>
+    <input value="{{val}}" placeholder="请输入快递编号"></input>
+  </view>
+   <view class="messageFHTit express clearFix">
+    <text class="width180">快递金额：</text>
+    <input value="{{val}}" placeholder="请输入快递金额"></input>
+  </view>
+</view>
+
+<view class="productBtn">
+  <view class="reset">
+    <button>重置</button>
+  </view>
+  <view class="save">
+    <button>保存</button>
+  </view>
+</view>

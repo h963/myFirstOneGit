@@ -1,0 +1,60 @@
+<!--pages/tdog/tdog.wxml-->
+<view class="headBox clearFix">
+  <view class="headBoxImg">
+    <image src="/assets/shipments/banner1.png" />
+  </view>
+  <view class="headBoxText">
+    <view>
+      <text>发货产品：</text>
+      <text class="Color6a">拿铁咖啡</text>
+    </view>
+    <view>
+      <text>购买数量：</text>
+      <text class="Color6a">×1</text>
+    </view>
+    <view>
+      <text>时间：</text>
+      <text class="Color6a">2020-2-20 13:20:30</text>
+    </view>
+  </view>
+</view>
+
+<view class="messageFH">
+  <view class="messageFHTit"> 
+    <strong>发货信息</strong>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">操作人：</text>
+    <text>李富贵</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">快递名称：</text>
+    <text>中通快递</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">快递编号：</text>
+    <text>YVCM34622135756132</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">快递产品：</text>
+    <text>拿铁咖啡</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">添加时间：</text>
+    <text>2020-03-05</text>
+  </view>
+  <view class="messageFHTit">
+    <text class="width180">快递金额：</text>
+    <text>12</text>
+  </view>
+</view>
+
+
+<view class="productBtn">
+  <view class="reset">
+    <button>修改</button>
+  </view>
+  <view class="save">
+    <button>删除</button>
+  </view>
+</view>
